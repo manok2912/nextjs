@@ -23,9 +23,9 @@ export default function HomeMatchCard({ match }) {
                         {match.currentMatchState != 'UPCOMING' && <span>{match.scores?.awayScore} ({match.scores?.awayScore})</span>}
                     </div></td>
                 </tr>
-                {match.currentMatchState != 'UPCOMING' &&  <tr><td colspan="2">{match.matchSummaryText}</td></tr>}
+                {match.currentMatchState != 'UPCOMING' &&  <tr><td colSpan="2">{match.matchSummaryText}</td></tr>}
                 <tr>
-                    <td colspan="2" style={{color: 'blue'}}><a href='#'>Match</a> • <a href='#'>Points</a> • <a href='#'>Series</a></td>
+                    <td colSpan="2" style={{color: 'blue'}}><a href='#'>Match</a> • <a href='#'>Points</a> • <a href='#'>Series</a></td>
                 </tr>
             </table>
             <span>{match.cmsMatchAssociatedType} • {match.venue.name} • {match.currentMatchState}</span>
